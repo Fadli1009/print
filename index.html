@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slip Setoran Tunai</title>
+    <!-- Bootstrap 4 CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <style>
+        @page {
+            size: 350mm 150mm landscape;
+
+            margin: 5mm;
+        }
+
+        @media print {
+
+            html,
+            body {
+                width: 350mm;
+
+                height: 150mm;
+
+                margin: 0;
+                padding: 0;
+            }
+
+            .page {
+                margin: 0;
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        body {
+            font-family: 'Courier New', monospace;
+        }
+
+        .border-dashed {
+            border: 1px dashed #000 !important;
+        }
+
+        .border-top-dashed {
+            border-top: 1px dashed #000 !important;
+        }
+
+        .border-bottom-dashed {
+            border-bottom: 1px dashed #000 !important;
+        }
+
+        .stamp {
+            color: #0066cc;
+            font-weight: bold;
+            border: 2px solid #0066cc;
+            padding: 5px;
+            display: inline-block;
+        }
+
+        .slip-container {
+            width: 100%;
+            max-width: 100%;
+            padding: 5mm;
+        }
+
+        .uppercase {
+            text-transform: uppercase;
+        }
+
+        .landscape-container {
+            width: 350mm;
+            height: 150mm;
+            page-break-after: always;
+            overflow: hidden;
+        }
+
+        @media print {
+            .no-print {
+                display: none;
+            }
+        }
+
+        .stretch-horizontal {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .wide-spacing {
+            letter-spacing: 0.5px;
+        }
+
+        .label-col {
+            width: 20%;
+        }
+
+        .value-col {
+            width: 80%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="landscape-container">
+        <div class="slip-container">
+            <div class="row">
+                <div class="col-12">
+
+                    <div class="d-flex justify-content-between mb-3">
+                        <div class="col-4">
+                            <p class="mb-0 uppercase wide-spacing">CELIN</p>
+                            <p class="mb-0 wide-spacing">BPRS Riyal Irsyadi</p>
+                            <p class="mb-0 wide-spacing">Jl. Kalibaru Timur No 25 Medan Satria</p>
+                        </div>
+                        <div class="col-4 text-center">
+                        </div>
+                        <div class="col-4 text-right">
+                            <p class="mb-0 uppercase wide-spacing">MAAT</p>
+                        </div>
+                    </div>
+
+
+                    <div class="border-top-dashed w-100 mb-3"></div>
+
+
+                    <div class="text-center mb-3">
+                        <h4 class="uppercase wide-spacing">SLIP SETORAN TUNAI</h4>
+                    </div>
+
+
+                    <div class="border-top-dashed w-100 mb-3"></div>
+
+
+                    <div class="row mb-2">
+                        <div class="col-2 label-col">
+                            <p class="mb-0 wide-spacing">TGL SETORAN</p>
+                        </div>
+                        <div class="col-10 value-col">
+                            <p class="mb-0">: 12/02/2025</p>
+                        </div>
+                    </div>
+                    <div class="row mb-2">
+                        <div class="col-2 label-col">
+                            <p class="mb-0 wide-spacing">JENIS REKENING</p>
+                        </div>
+                        <div class="col-10 value-col">
+                            <p class="mb-0">: TABUNGAN</p>
+                        </div>
+                    </div>
+                    <div class="row mb-2">
+                        <div class="col-2 label-col">
+                            <p class="mb-0 wide-spacing">NO DOKUMEN</p>
+                        </div>
+                        <div class="col-10 value-col">
+                            <p class="mb-0">: CLN.KM22</p>
+                        </div>
+                    </div>
+
+
+                    <div class="border-top-dashed w-100 mb-3"></div>
+
+
+                    <div class="row mb-2">
+                        <div class="col-2 label-col">
+                            <p class="mb-0 wide-spacing">NO REKENING</p>
+                        </div>
+                        <div class="col-10 value-col">
+                            <p class="mb-0">: 1020101475</p>
+                        </div>
+                    </div>
+                    <div class="row mb-2">
+                        <div class="col-2 label-col">
+                            <p class="mb-0 wide-spacing">NAMA PEMILIK</p>
+                        </div>
+                        <div class="col-10 value-col">
+                            <p class="mb-0">: MAAT</p>
+                        </div>
+                    </div>
+                    <div class="row mb-2">
+                        <div class="col-2 label-col">
+                            <p class="mb-0 wide-spacing">JUMLAH SETORAN</p>
+                        </div>
+                        <div class="col-10 value-col">
+                            <p class="mb-0">: 1.500.000,00</p>
+                        </div>
+                    </div>
+                    <div class="row mb-2">
+                        <div class="col-2 label-col">
+                            <p class="mb-0 wide-spacing">TERBILANG</p>
+                        </div>
+                        <div class="col-10 value-col">
+                            <p class="mb-0">: Satu juta lima ratus ribu rupiah</p>
+                        </div>
+                    </div>
+                    <div class="row mb-2">
+                        <div class="col-2 label-col">
+                            <p class="mb-0 wide-spacing">KETERANGAN</p>
+                        </div>
+                        <div class="col-10 value-col">
+                            <p class="mb-0">: SETUN TAB AN. MAAT</p>
+                        </div>
+                    </div>
+
+
+                    <div class="border-top-dashed w-100 mb-3"></div>
+
+
+                    <div class="row mt-4 d-flex justify-content-between">
+                        <div class="col-3">
+
+                            <div class="d-flex align-items-center">
+                                <div class="stamp mr-3">BSR</div>
+                                <div>
+                                    <p class="mb-0 wide-spacing">BEKASI</p>
+                                    <p class="mb-0 wide-spacing">12/02/2025</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3"></div>
+                        <div class="col-3 text-right">
+                            <p class="mb-0 wide-spacing">Penyetor,</p>
+                            <br><br><br>
+                            <p class="mb-0 wide-spacing">_____________</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap 4 JS dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
