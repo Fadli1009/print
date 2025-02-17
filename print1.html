@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- CDN Bootstrap 4.0 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <style>
+        @page {
+            size: 350mm 150mm landscape;
+
+            margin: 5mm;
+        }
+
+        @media print {
+
+            html,
+            body {
+                width: 350mm;
+
+                height: 150mm;
+
+                margin: 0;
+                padding: 0;
+            }
+
+            .page {
+                margin: 0;
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .mediaPrint {
+            width: 350mm;
+            height: 150mm;
+            page-break-after: always;
+            overflow: hidden;
+        }
+
+        .navbar-print {
+            height: 15mm;
+        }
+
+        table {
+            width: 100%;
+            border: 1px solid black;
+            border-collapse: collapse;
+            text-align: center;
+        }
+
+
+        td {
+            border: 1px solid black;
+            /* padding: 8px 10px; */
+            text-align: center;
+            font-weight: bold;
+        }
+
+        th {
+            width: 100px;
+        }
+
+        td {
+            width: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="px-5 py-4" class="mediaPrint">
+        <!-- Navbar -->
+        <div class=" d-flex mb-4 navbar-print">
+            <div class=" w-75 ">
+                <input type="text" readonly class="h-100 w-50 border border-dark">
+            </div>
+
+            <!-- Logo -->
+            <div class="w-25">
+                <img src="logo.png" alt="" class="w-100">
+            </div>
+        </div>
+
+        <!-- Body -->
+
+        <div>
+            <div class="d-flex justify-content-between w-100 mb-2">
+                <div class="w-75">
+                    <h5>SLIP PENARIKAN TABUNGAN</h5>
+                </div>
+
+                <div class=" w-25 text-center">
+                    <h4>No : 07574</h4>
+                </div>
+            </div>
+
+            <div class=" w-100 border d-flex border-dark py-1 px-5 justify-content-between mb-4">
+                <div>
+                    <input type="checkbox"> Tabungan Zaitun
+                </div>
+                <div>
+                    <input type="checkbox"> Tabungan At-tin
+                </div>
+                <div>
+                    <input type="checkbox"> Tabungan Ruthobah
+                </div>
+                <div>
+                    <input type="checkbox"> Tabungan Thawaf
+                </div>
+                <div>
+                    <input type="checkbox"> Tabungan Hadyu
+                </div>
+                <div>
+                    <input type="checkbox"> Tabungan Ta'if Athya
+                </div>
+            </div>
+
+            <div class=" mb-3">
+                <div class="d-flex">
+                    <div class=" w-25 d-flex justify-content-between pr-4">
+                        <h5>Nama</h5>
+                        <p>:</p>
+                    </div>
+                    <div class=" w-75 h-100 border-bottom border-dark">
+                        <input type="text" class="w-100 border-0 border-bottom border-dark">
+                    </div>
+                </div>
+                <div class="d-flex">
+                    <div class=" w-25 d-flex justify-content-between pr-4">
+                        <h5>No. Rekening</h5>
+                        <p>:</p>
+                    </div>
+                    <div class=" w-75 h-100 border-bottom border-dark">
+                        <input type="text" class="w-100 border-0 border-bottom border-dark">
+                    </div>
+                </div>
+                <div class="d-flex">
+                    <div class=" w-25 d-flex justify-content-between pr-4">
+                        <h5>Jumlah Penarikan</h5>
+                        <p>:</p>
+                    </div>
+                    <div class=" w-75 h-100 border-bottom border-dark">
+                        <input type="text" class="w-100 border-0 border-bottom border-dark">
+                    </div>
+                </div>
+                <div class="d-flex">
+                    <div class=" w-25 d-flex justify-content-between pr-4">
+                        <h5>Terbilang</h5>
+                        <p>:</p>
+                    </div>
+                    <div class=" w-75 h-100 border-bottom border-dark">
+                        <input type="text" class="w-100 border-0 border-bottom border-dark">
+                    </div>
+                </div>
+            </div>
+
+            <div align="right" class="px-3">
+                <h6>Tanggal : ........... /......................... / 20</h6>
+            </div>
+            <div class="mt-3">
+                <div>
+                    <h6>Tanggal : ........... /......................... / 20</h6>
+                </div>
+                <div class=" d-flex justify-content-between">
+
+                    <div class=" d-flex w-75">
+                        <div class="mr-5">
+                            <table class="">
+                                <thead class="">
+                                    <tr>
+                                        <th>Collect</th>
+                                        <th>Teller</th>
+                                        <th>Account</th>
+                                        <th>Audit int</th>
+                                        <th>Dir</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr style="height:80px;">
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="">
+
+                            <table class="">
+                                <thead class="">
+                                    <tr>
+                                        <!-- <th>Ka. Ops</th> -->
+                                        <th>OTORISASI</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Ka. Ops</td>
+                                        <td>Dir</td>
+                                    </tr>
+                                    <tr style="height:54px;">
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="w-25 h-100">
+                        <div class="w-100 d-flex justify-content-center align-items-center mt-4">
+                            <p class=" border-top border-dark">Tandatangan penabuangan</p>
+                        </div>
+                        <div class="d-flex flex-column">
+                            <span class="m-0">Saldo akhir buku tabungan:</span>
+                            <strong>Rp :</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
