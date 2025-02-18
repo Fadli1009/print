@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        body {
+            -webkit-print-color-adjust: exact !important;
+            print-color-adjust: exact !important;
+        }
+
+        @page {
+            size: 350mm 150mm landscape;
+
+            margin: 5mm;
+        }
+
+        @media print {
+            body {
+                background-color: #665e53 !important;
+            }
+        }
+        
+        
+        .mediaPrint {
+            width: 350mm;
+            height: 150mm;
+            page-break-after: always;
+            overflow: hidden;
+        }
+
+        .table1 td {
+            padding: 30px;
+        }
+
+        .table1 {
+            width: 100%;
+        }
+
+        .con {
+            gap: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid mediaPrint ">
+        <div class="row con">
+            <div class="col-sm">
+                <div class="border border-dark p-2 row" style="height: 85px;">
+                    validasi
+                </div>
+                <div class="d-flex justify-content-between my-3">
+                    <div>
+                        <input type="checkbox">
+                        <label for="" class="form-label">Setoran</label>
+                    </div>
+                    <div>
+                        <input type="checkbox">
+                        <label for="" class="form-label">Pemindahan Buku</label>
+                    </div>
+                    <div>
+                        <input type="checkbox">
+                        <label for="" class="form-label">Transfer</label>
+                    </div>
+                </div>
+                <div class="border border-dark text-center p-2 row d-flex justify-content-center">
+                    PENGIRIM / PENYETOR
+                </div>
+                <div class="d-flex justify-content-end my-2">
+                    <div class="mr-5">
+                        <input type="checkbox">
+                        <label for="" class="form-label">Uang Tunai</label>
+                    </div>
+                    <div>
+                        <input type="checkbox">
+                        <label for="" class="form-label">Debet Rekening</label>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-3">Nama</div>
+                    <div class="col-sm border-bottom border-dark">:</div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-3">No. Rekening</div>
+                    <div class="col-sm border-bottom border-dark">:</div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-3">Nama Bank</div>
+                    <div class="col-sm border-bottom border-dark">:</div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-3">NIK</div>
+                    <div class="col-sm border-bottom border-dark">:</div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-3">No Telp</div>
+                    <div class="col-sm border-bottom border-dark">:</div>
+                </div>
+                <div class="row mb-2">
+                    <div class="col-sm">
+                        Tanggal : ................. / ......................... / 20
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <table border="1" class="table1 ">
+                            <tr>
+                                <th>Collect</th>
+                                <th>Teller</th>
+                                <th>Teb/Dep</th>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="col-6 d-flex flex-column align-items-center align-self-end">
+                        <div class="border-top border-dark  d-block text-center" style="width: 100%;">Tanda Tangan
+                            Pendukung</div>
+                    </div>
+                </div>
+            </div>
+            <div class="w-50">
+                <div class="d-flex justify-content-end mb-2">
+                    <img src="logo.png" style="width: 350px;" alt="">
+                </div>
+
+                <div class="text-right h5 mb-2">
+                    No. 13171
+                </div>
+                <div class=" text-center mb-2">
+                    APLIKASI SETORAN/TRANSFER/PEMINDAHAN
+                </div>
+                <div class="border text-center p-2 border-dark  mb-2 w-100 bold">
+                    PENERIMA
+                </div>
+                <div class="row mb-3">
+                    <div class="col-3">Nama</div>
+                    <div class="col-sm border-bottom border-dark">:</div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-3">No. Rekening</div>
+                    <div class="col-sm border-bottom border-dark">:</div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-3">Nama Bank</div>
+                    <div class="col-sm border-bottom border-dark">:</div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-3">Jumlah</div>
+                    <div class="col-sm border-bottom border-dark">:</div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-3">Terbilang</div>
+                    <div class="col-sm border-bottom border-dark">:</div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-3">Keterangan</div>
+                    <div class="col-sm border-bottom border-dark">:</div>
+                </div>
+                <div class="row mt-1">
+                    <div class="col-sm">
+                        <table border="0" style="width: 100%;">
+                            <tr class="p-4 text-center bg-success text-white">
+                                <th colspan="3">DIISI OLEH PIHAK BANK</th>
+                            </tr>
+                        </table>
+                        <div class="col">
+                            <div class="row mt-3 border border-dark p-1">
+                                <div class="col-3">Jumlah Transfer</div>
+                                <div class="col-5">:</div>
+                            </div>
+                            <div class="row border border-dark p-1">
+                                <div class="col-3">Biaya Transfer</div>
+                                <div class="col-5">:</div>
+                            </div>
+                            <div class="row border border-dark p-1">
+                                <div class="col-3">Total Transfer</div>
+                                <div class="col-5">:</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
